@@ -1,0 +1,830 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Together | معًا</title>
+
+    <meta name="description"
+          content="Together منصة تعليمية داعمة للأشخاص ذوي متلازمة داون وأسرهم والمتخصصين.">
+
+    <link rel="stylesheet" href="style.css?v=2">
+    <script src="script.js?v=2" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <a href="#home" class="logo">
+            <span class="logo-icon">💛</span>
+            Together <span class="arabic-logo">معًا</span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="فتح القائمة"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav" id="mainNav">
+            <a href="#home" class="nav-link">الرئيسية</a>
+            <a href="#about" class="nav-link">عن المنصة</a>
+            <a href="#learning" class="nav-link">التعلّم</a>
+            <a href="#stories" class="nav-link">القصص</a>
+            <a href="#games" class="nav-link">الألعاب</a>
+            <a href="#communication" class="nav-link">التواصل</a>
+            <a href="#family" class="nav-link">للأسرة</a>
+            <a href="#account" class="nav-link">حساب وليّ الأمر</a>
+            <a href="#specialists" class="nav-link">للمختصين</a>
+            <a href="#contact" class="nav-link">الدعم</a>
+        </nav>
+
+        <button class="voice-toggle"
+                id="voiceToggle"
+                type="button"
+                aria-pressed="false"
+                aria-label="تشغيل القراءة الصوتية عند الضغط"
+                title="تشغيل القراءة الصوتية عند الضغط">
+            <span aria-hidden="true">🎙️</span>
+            <span class="visually-hidden" id="voiceToggleLabel">شغّل القراءة الصوتية</span>
+        </button>
+
+        <button class="language-btn" id="languageBtn">
+            English
+        </button>
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    🌈 كل خطوة صغيرة تصنع فرقًا
+                </span>
+
+                <h1>
+                    نتعلّم ونلعب<br>
+                    <span>ونتواصل معًا</span>
+                </h1>
+
+                <p class="hero-description">
+                    مساحة آمنة وممتعة تساعد الأشخاص ذوي متلازمة داون
+                    على التعلّم والتعبير عن أنفسهم، وتدعم أسرهم
+                    والمتخصصين في رحلة النمو والتطوّر.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#learning" class="btn btn-primary">
+                        ابدأ التعلّم ✨
+                    </a>
+
+                    <a href="#about" class="btn btn-secondary">
+                        اكتشف المنصة
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>💚</strong>
+                        <span>تعلّم ممتع</span>
+                    </div>
+
+                    <div>
+                        <strong>🎨</strong>
+                        <span>أنشطة تفاعلية</span>
+                    </div>
+
+                    <div>
+                        <strong>🤝</strong>
+                        <span>دعم للجميع</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-art" aria-label="رسمة تعبيرية">
+                <div class="art-circle"></div>
+                <div class="art-sun">☀️</div>
+                <div class="art-heart heart-one">♡</div>
+                <div class="art-heart heart-two">♡</div>
+
+                <div class="art-card">
+                    <div class="art-emoji">🌻</div>
+                    <h3>أنا أستطيع!</h3>
+                    <p>كل يوم فرصة جديدة للتعلّم 💛</p>
+                </div>
+
+                <div class="art-tag tag-one">⭐ خطوة بخطوة</div>
+                <div class="art-tag tag-two">🌈 معًا أفضل</div>
+            </div>
+
+            <div class="hero-decoration decoration-one">✿</div>
+            <div class="hero-decoration decoration-two">✦</div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="section about-section" id="about">
+
+            <div class="section-heading">
+                <span class="eyebrow">من نحن؟</span>
+                <h2>مساحة تنمو فيها القدرات 💚</h2>
+
+                <p>
+                    Together منصة تعليمية وداعمة تجمع بين التعلّم
+                    واللعب والتواصل، مع توفير محتوى يساعد الأسرة
+                    والمتخصصين على متابعة رحلة التعلّم.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <a href="#learning" class="feature-card feature-mint">
+                    <div class="feature-icon">📚</div>
+                    <h3>نتعلّم</h3>
+                    <p>
+                        أنشطة مبسطة لتعلّم الألوان والأرقام والأشكال
+                        ومهارات الحياة اليومية.
+                    </p>
+                </a>
+
+                <a href="#games" class="feature-card feature-pink">
+                    <div class="feature-icon">🎮</div>
+                    <h3>نلعب</h3>
+                    <p>
+                        ألعاب تفاعلية تشجّع على التركيز والملاحظة
+                        والتعلّم من خلال التجربة.
+                    </p>
+                </a>
+
+                <a href="#communication" class="feature-card feature-yellow">
+                    <div class="feature-icon">💬</div>
+                    <h3>نتواصل</h3>
+                    <p>
+                        وسائل مساعدة للتعبير عن الاحتياجات والمشاعر
+                        باستخدام الكلمات والرموز.
+                    </p>
+                </a>
+
+                <a href="#family" class="feature-card feature-lavender">
+                    <div class="feature-icon">🤝</div>
+                    <h3>ندعم</h3>
+                    <p>
+                        موارد وإرشادات تعليمية للأسر والمتخصصين
+                        لدعم التعلّم والتقدّم.
+                    </p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Learning -->
+        <section class="section learning-section" id="learning">
+
+            <div class="section-heading">
+                <span class="eyebrow">نتعلّم معًا</span>
+                <h2>كل يوم نتعلّم حاجة جديدة 🌱</h2>
+
+                <p>
+                    اختار النشاط اللي تحب تبدأ بيه.
+                    اضغط على البطاقة علشان تفتح النشاط.
+                </p>
+            </div>
+
+            <div class="learning-grid" id="learningGrid">
+
+                <a href="#learning" class="learning-card" data-lesson="colors">
+                    <div class="learning-image color-image">🎨</div>
+                    <div class="learning-info">
+                        <span class="level">المستوى الأول</span>
+                        <h3>عالم الألوان</h3>
+                        <p>نتعرّف على الألوان بطريقة ممتعة.</p>
+                        <span class="text-btn">ابدأ النشاط ←</span>
+                    </div>
+                </a>
+
+                <a href="#learning" class="learning-card" data-lesson="numbers">
+                    <div class="learning-image number-image">🔢</div>
+                    <div class="learning-info">
+                        <span class="level">المستوى الأول</span>
+                        <h3>رحلة الأرقام</h3>
+                        <p>نتعلّم العدّ من ١ إلى ١٠.</p>
+                        <span class="text-btn">ابدأ النشاط ←</span>
+                    </div>
+                </a>
+
+                <a href="#learning" class="learning-card" data-lesson="shapes">
+                    <div class="learning-image shape-image">🔺</div>
+                    <div class="learning-info">
+                        <span class="level">المستوى الأول</span>
+                        <h3>الأشكال حولنا</h3>
+                        <p>نكتشف الدائرة والمربع والمثلث.</p>
+                        <span class="text-btn">ابدأ النشاط ←</span>
+                    </div>
+                </a>
+
+                <a href="#learning" class="learning-card" data-lesson="routine">
+                    <div class="learning-image routine-image">🌞</div>
+                    <div class="learning-info">
+                        <span class="level">مهارات الحياة</span>
+                        <h3>روتيني الصباحي</h3>
+                        <p>نتعلّم ترتيب خطوات يومنا.</p>
+                        <span class="text-btn">ابدأ النشاط ←</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="lesson-panel hidden" id="lessonPanel">
+                <div class="lesson-panel-header">
+                    <h3 id="lessonTitle">نشاط تعليمي</h3>
+                    <button class="close-btn"
+                            id="closeLesson"
+                            aria-label="إغلاق النشاط">✕</button>
+                </div>
+
+                <p id="lessonQuestion"></p>
+                <div class="lesson-options" id="lessonOptions"></div>
+                <p id="lessonFeedback" aria-live="polite"></p>
+                <p class="lesson-score" id="lessonScore"></p>
+            </div>
+
+        </section>
+
+
+        <!-- Stories -->
+        <section class="section stories-section" id="stories">
+
+            <div class="section-heading" id="storyHeading">
+                <span class="eyebrow">نقرأ ونحلم معًا</span>
+                <h2>حكايات صغيرة ومعانٍ جميلة 📖</h2>
+                <p>اختر حكاية، ثم أجب عن سؤالها.</p>
+            </div>
+
+            <div class="story-grid" id="storyGrid">
+                <button class="story-card story-mint" type="button" data-story="flower">
+                    <span class="story-icon" aria-hidden="true">🐢</span>
+                    <span class="story-meta">حكاية قصيرة</span>
+                    <strong>السلحفاة والزهرة</strong>
+                    <span>عن اللطف والاهتمام</span>
+                    <span class="text-btn">افتح الحكاية ←</span>
+                </button>
+
+                <button class="story-card story-coral" type="button" data-story="toys">
+                    <span class="story-icon" aria-hidden="true">🧸</span>
+                    <span class="story-meta">حكاية قصيرة</span>
+                    <strong>لينا وألعابها</strong>
+                    <span>عن الترتيب والمشاركة</span>
+                    <span class="text-btn">افتح الحكاية ←</span>
+                </button>
+
+                <button class="story-card story-sky" type="button" data-story="bird">
+                    <span class="story-icon" aria-hidden="true">🐦</span>
+                    <span class="story-meta">حكاية قصيرة</span>
+                    <strong>عصفور يبحث عن صديق</strong>
+                    <span>عن الصداقة والتعاون</span>
+                    <span class="text-btn">افتح الحكاية ←</span>
+                </button>
+            </div>
+
+            <article class="story-reader hidden" id="storyReader" aria-live="polite">
+                <div class="story-reader-header">
+                    <div>
+                        <span class="eyebrow">حكايتنا</span>
+                        <h3 id="storyTitle"></h3>
+                    </div>
+                    <button class="close-btn"
+                            id="closeStory"
+                            type="button"
+                            aria-label="العودة إلى القصص">✕</button>
+                </div>
+
+                <div class="story-text" id="storyText"></div>
+                <button class="btn btn-secondary story-listen"
+                        id="storyListen"
+                        type="button">🔊 استمع إلى الحكاية</button>
+
+                <div class="story-question">
+                    <h4 id="storyQuestion"></h4>
+                    <div class="story-options" id="storyOptions"></div>
+                    <p id="storyFeedback" aria-live="polite"></p>
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- Games -->
+        <section class="section games-section" id="games">
+
+            <div class="section-heading">
+                <span class="eyebrow">نتعلّم باللعب</span>
+                <h2>اللعب كمان تعلّم 🎈</h2>
+
+                <p>
+                    اختار لعبة وابدأ التحدّي.
+                </p>
+            </div>
+
+            <label class="game-child-label hidden" id="gameChildWrapper" for="gameChildSelect">
+                اللاعب:
+                <select id="gameChildSelect"></select>
+            </label>
+
+            <div class="game-picker" id="gamePicker" role="group" aria-label="اختيار لعبة">
+                <button class="game-pick is-selected"
+                        type="button"
+                        data-game="memory"
+                        aria-pressed="true">
+                    <span aria-hidden="true">🧠</span>
+                    <strong>طابق البطاقات</strong>
+                    <small>ابحث عن الأزواج المتشابهة</small>
+                </button>
+                <button class="game-pick"
+                        type="button"
+                        data-game="color"
+                        aria-pressed="false">
+                    <span aria-hidden="true">🎨</span>
+                    <strong>صيّاد الألوان</strong>
+                    <small>اختر اللون المطلوب</small>
+                </button>
+                <button class="game-pick"
+                        type="button"
+                        data-game="pattern"
+                        aria-pressed="false">
+                    <span aria-hidden="true">🔷</span>
+                    <strong>أكمل النمط</strong>
+                    <small>اكتشف الرمز التالي</small>
+                </button>
+            </div>
+
+            <button class="btn btn-secondary back-to-games hidden"
+                    id="backToGames"
+                    type="button">← الرجوع إلى الألعاب</button>
+
+            <div class="game-box game-view hidden" id="memoryGame">
+
+                <div class="game-header">
+                    <div>
+                        <h3>🧠 لعبة الذاكرة</h3>
+                        <p>اقلب بطاقتين في كل مرة وابحث عن الزوج المتشابه.</p>
+                    </div>
+
+                    <div class="game-controls">
+                        <button class="btn btn-secondary"
+                                id="restartGame"
+                                type="button">إعادة اللعب ↻</button>
+                        <button class="btn btn-primary hidden"
+                                id="nextMemoryLevel"
+                                type="button">المستوى التالي ←</button>
+                    </div>
+                </div>
+
+                <div class="game-stats">
+                    <span>المستوى: <strong id="memoryLevel">١</strong></span>
+                    <span>المحاولات: <strong id="attempts">0</strong></span>
+                    <span>الأزواج: <strong id="matches">0</strong> / <strong id="memoryTotalPairs">3</strong></span>
+                </div>
+
+                <div class="memory-grid" id="memoryGrid"></div>
+
+                <p class="game-feedback"
+                   id="gameFeedback"
+                   aria-live="polite">
+                    يلا نبدأ اللعب! 💛
+                </p>
+                <p class="game-rating hidden" id="memoryRating" aria-live="polite"></p>
+
+            </div>
+
+            <div class="game-box game-view hidden" id="colorGame">
+                <div class="game-header">
+                    <div>
+                        <h3>🎨 صيّاد الألوان</h3>
+                        <p id="colorPrompt">اضغط على اللون الأحمر.</p>
+                    </div>
+                    <span class="game-round" id="colorRound">١ / ٣</span>
+                </div>
+                <div class="color-options" id="colorOptions"></div>
+                <p class="game-feedback" id="colorFeedback" aria-live="polite"></p>
+                <p class="game-score" id="colorScore">إجابات صحيحة: ٠</p>
+                <p class="game-rating hidden" id="colorRating" aria-live="polite"></p>
+                <button class="btn btn-primary hidden"
+                        id="nextColorRound"
+                        type="button">التالي ←</button>
+            </div>
+
+            <div class="game-box game-view hidden" id="patternGame">
+                <div class="game-header">
+                    <div>
+                        <h3>🔷 أكمل النمط</h3>
+                        <p>ما الرمز الذي يأتي بعد ذلك؟</p>
+                    </div>
+                    <span class="game-round" id="patternRound">١ / ٣</span>
+                </div>
+                <div class="pattern-sequence" id="patternSequence" aria-label="النمط"></div>
+                <div class="pattern-options" id="patternOptions"></div>
+                <p class="game-feedback" id="patternFeedback" aria-live="polite"></p>
+                <p class="game-score" id="patternScore">إجابات صحيحة: ٠</p>
+                <p class="game-rating hidden" id="patternRating" aria-live="polite"></p>
+                <button class="btn btn-primary hidden"
+                        id="nextPatternRound"
+                        type="button">التالي ←</button>
+            </div>
+
+        </section>
+
+
+        <!-- Communication -->
+        <section class="section communication-section"
+                 id="communication">
+
+            <div class="section-heading">
+                <span class="eyebrow">كل تعبير مهم</span>
+                <h2>خلّينا نعبّر عن نفسنا 💬</h2>
+
+                <p>
+                    اختار الكلمات والرموز المناسبة علشان تكوّن جملة
+                    تعبّر عن احتياجك.
+                </p>
+            </div>
+
+            <div class="communication-box">
+
+                <div class="sentence-area">
+                    <span class="sentence-label">جملتي:</span>
+
+                    <div class="sentence-output"
+                         id="sentenceOutput"
+                         aria-live="polite">
+                        اختار الكلمات من تحت
+                    </div>
+                </div>
+
+                <div class="communication-options">
+
+                    <button class="communication-choice"
+                            data-word="أنا"
+                            data-emoji="🙋">
+                        <span>🙋</span>
+                        أنا
+                    </button>
+
+                    <button class="communication-choice"
+                            data-word="عايز"
+                            data-emoji="🤲">
+                        <span>🤲</span>
+                        عايز
+                    </button>
+
+                    <button class="communication-choice"
+                            data-word="مياه"
+                            data-emoji="💧">
+                        <span>💧</span>
+                        مياه
+                    </button>
+
+                    <button class="communication-choice"
+                            data-word="أكل"
+                            data-emoji="🍎">
+                        <span>🍎</span>
+                        أكل
+                    </button>
+
+                    <button class="communication-choice"
+                            data-word="مساعدة"
+                            data-emoji="🆘">
+                        <span>🆘</span>
+                        مساعدة
+                    </button>
+
+                    <button class="communication-choice"
+                            data-word="الحمام"
+                            data-emoji="🚻">
+                        <span>🚻</span>
+                        الحمام
+                    </button>
+
+                    <button class="communication-choice"
+                            data-word="نعم"
+                            data-emoji="👍">
+                        <span>👍</span>
+                        نعم
+                    </button>
+
+                    <button class="communication-choice"
+                            data-word="لا"
+                            data-emoji="👎">
+                        <span>👎</span>
+                        لا
+                    </button>
+
+                    <button class="communication-choice"
+                            data-word="أنا سعيد"
+                            data-emoji="😊">
+                        <span>😊</span>
+                        أنا سعيد
+                    </button>
+
+                </div>
+
+                <div class="communication-actions">
+                    <button class="btn btn-primary"
+                            id="speakSentence">
+                        🔊 اسمع الجملة
+                    </button>
+
+                    <button class="btn btn-secondary"
+                            id="clearSentence">
+                        مسح الكلمات
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Family -->
+        <section class="section family-section" id="family">
+
+            <div class="family-content">
+                <span class="eyebrow">إحنا معاكم</span>
+
+                <h2>رحلة التعلّم أحلى لما نكون معًا 💛</h2>
+
+                <p>
+                    نؤمن إن كل شخص له قدراته وطريقته في التعلّم.
+                    Together بتوفّر أنشطة وموارد تعليمية تساعد الأسر
+                    والمتخصصين على تشجيع التقدّم خطوة بخطوة.
+                </p>
+
+                <a href="#resources" class="btn btn-primary">
+                    اكتشف الموارد
+                </a>
+            </div>
+
+            <div class="family-art" aria-hidden="true">
+                <span>🌼</span>
+                <span>🧩</span>
+                <span>💚</span>
+                <span>🌈</span>
+            </div>
+
+        </section>
+
+
+        <!-- Resources -->
+        <section class="section resources-section" id="resources">
+
+            <div class="section-heading">
+                <span class="eyebrow">نتعلّم ونكتشف</span>
+                <h2>موارد تساعدنا 🌷</h2>
+
+                <p>
+                    أفكار وأنشطة يمكن للأسرة استخدامها لدعم التعلّم
+                    والتواصل في الحياة اليومية.
+                </p>
+            </div>
+
+            <div class="resource-grid">
+
+                <article class="resource-card">
+                    <span>📅</span>
+                    <h3>جدول يومي مصوّر</h3>
+                    <p>ترتيب الأنشطة اليومية في خطوات واضحة.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span>🎨</span>
+                    <h3>أنشطة منزلية</h3>
+                    <p>أفكار بسيطة للرسم والعدّ والتصنيف.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span>💬</span>
+                    <h3>دعم التواصل</h3>
+                    <p>استخدام الصور والكلمات للتعبير عن الاحتياجات.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Parent account -->
+        <section class="section account-section" id="account">
+            <div class="section-heading">
+                <span class="eyebrow">مساحة الأسرة</span>
+                <h2>حساب وليّ الأمر 👨‍👩‍👧</h2>
+                <p>أنشئ حسابًا لمتابعة أنشطة طفلك ونتائجه.</p>
+            </div>
+
+            <div class="account-content">
+                <div id="parentAuth">
+                    <div class="auth-switch" role="group" aria-label="اختيار نوع الحساب">
+                        <button class="auth-tab is-active" id="showLogin" type="button" aria-pressed="true">تسجيل الدخول</button>
+                        <button class="auth-tab" id="showRegister" type="button" aria-pressed="false">حساب جديد</button>
+                    </div>
+
+                    <form class="contact-form" id="parentLoginForm">
+                        <h3>تسجيل دخول وليّ الأمر</h3>
+                        <label for="parentLoginEmail">البريد الإلكتروني</label>
+                        <input id="parentLoginEmail" name="email" type="email" autocomplete="email" required>
+                        <label for="parentLoginPassword">كلمة المرور</label>
+                        <input id="parentLoginPassword" name="password" type="password" autocomplete="current-password" minlength="10" required>
+                        <button class="btn btn-primary" type="submit">دخول</button>
+                    </form>
+
+                    <form class="contact-form hidden" id="parentRegisterForm">
+                        <h3>إنشاء حساب وليّ الأمر والطفل</h3>
+                        <label for="parentName">اسم وليّ الأمر</label>
+                        <input id="parentName" name="name" autocomplete="name" maxlength="100" required>
+                        <label for="parentEmail">البريد الإلكتروني</label>
+                        <input id="parentEmail" name="email" type="email" autocomplete="email" required>
+                        <label for="parentPassword">كلمة المرور (١٠ أحرف على الأقل)</label>
+                        <input id="parentPassword" name="password" type="password" autocomplete="new-password" minlength="10" required>
+                        <label for="childName">اسم الطفل</label>
+                        <input id="childName" name="child_name" maxlength="60" required>
+                        <label for="childAge">عمر الطفل</label>
+                        <input id="childAge" name="child_age" type="number" min="2" max="18">
+                        <label class="consent-label">
+                            <input name="consent" type="checkbox" required>
+                            أؤكد أنني وليّ الأمر وأوافق على حفظ بيانات المتابعة الضرورية.
+                        </label>
+                        <button class="btn btn-primary" type="submit">إنشاء الحساب</button>
+                    </form>
+                    <p class="form-feedback" id="parentAuthFeedback" aria-live="polite"></p>
+                </div>
+
+                <div class="dashboard-panel hidden" id="parentDashboard">
+                    <div class="dashboard-heading">
+                        <div>
+                            <span class="eyebrow">لوحة المتابعة</span>
+                            <h3>أهلًا <span id="parentDisplayName"></span></h3>
+                        </div>
+                        <button class="btn btn-secondary" type="button" data-logout>تسجيل الخروج</button>
+                    </div>
+                    <div class="dashboard-columns">
+                        <div>
+                            <h4>ملفات الأطفال</h4>
+                            <div id="childrenList"></div>
+                            <form class="inline-form" id="addChildForm">
+                                <label for="additionalChildName">إضافة طفل</label>
+                                <input id="additionalChildName" name="name" maxlength="60" placeholder="اسم الطفل" required>
+                                <input name="age" type="number" min="2" max="18" aria-label="العمر" placeholder="العمر">
+                                <button class="btn btn-secondary" type="submit">إضافة</button>
+                            </form>
+                        </div>
+                        <div>
+                            <h4>آخر الأنشطة</h4>
+                            <div class="activity-list" id="parentActivityList"></div>
+                        </div>
+                    </div>
+                    <div class="parent-tickets">
+                        <h4>طلبات المساعدة والردود</h4>
+                        <div id="parentTicketList"></div>
+                    </div>
+                    <p class="form-feedback" id="parentDashboardFeedback" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Specialists -->
+        <section class="section specialists-section" id="specialists">
+            <div class="section-heading">
+                <span class="eyebrow">مساحة مهنية</span>
+                <h2>بوابة المختصين 🩺</h2>
+                <p>تابعوا طلبات المساعدة والأنشطة المسجلة، وردّوا على الأسر.</p>
+            </div>
+
+            <div class="account-content">
+                <div id="specialistAuth">
+                    <form class="contact-form" id="specialistLoginForm">
+                        <h3>دخول المختص</h3>
+                        <label for="specialistLoginEmail">البريد الإلكتروني</label>
+                        <input id="specialistLoginEmail" name="email" type="email" autocomplete="username" required>
+                        <label for="specialistLoginPassword">كلمة المرور</label>
+                        <input id="specialistLoginPassword" name="password" type="password" autocomplete="current-password" required>
+                        <button class="btn btn-primary" type="submit">دخول لوحة المختص</button>
+                    </form>
+                    <details class="specialist-invite">
+                        <summary>إنشاء حساب مختص برمز دعوة</summary>
+                        <form class="contact-form" id="specialistRegisterForm">
+                            <label for="specialistName">الاسم</label>
+                            <input id="specialistName" name="name" autocomplete="name" required>
+                            <label for="specialistEmail">البريد الإلكتروني</label>
+                            <input id="specialistEmail" name="email" type="email" autocomplete="email" required>
+                            <label for="specialistPassword">كلمة المرور (١٠ أحرف على الأقل)</label>
+                            <input id="specialistPassword" name="password" type="password" minlength="10" autocomplete="new-password" required>
+                            <label for="specialistInviteCode">رمز الدعوة</label>
+                            <input id="specialistInviteCode" name="invite_code" type="password" required>
+                            <button class="btn btn-secondary" type="submit">إنشاء حساب مختص</button>
+                        </form>
+                    </details>
+                    <p class="form-feedback" id="specialistAuthFeedback" aria-live="polite"></p>
+                </div>
+
+                <div class="dashboard-panel hidden" id="specialistDashboard">
+                    <div class="dashboard-heading">
+                        <div>
+                            <span class="eyebrow">لوحة المختص</span>
+                            <h3>أهلًا <span id="specialistDisplayName"></span></h3>
+                        </div>
+                        <button class="btn btn-secondary" type="button" data-logout>تسجيل الخروج</button>
+                    </div>
+                    <h4>إشعارات الدخول واللعب</h4>
+                    <div class="activity-list" id="specialistEventList"></div>
+                    <h4>تنبيهات الحسابات والطلبات</h4>
+                    <div class="activity-list" id="specialistNotificationList"></div>
+                    <h4>طلبات المساعدة</h4>
+                    <div class="specialist-ticket-list" id="specialistTicketList"></div>
+                    <p class="form-feedback" id="specialistDashboardFeedback" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+
+            <div class="section-heading">
+                <span class="eyebrow">نتواصل معًا</span>
+                <h2>يسعدنا نسمع منك 💌</h2>
+                <p>اكتب رسالتك أو اقتراحك لتطوير المنصة.</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <label for="contactName">الاسم</label>
+                <input id="contactName"
+                       name="name"
+                       type="text"
+                       placeholder="اكتب اسمك"
+                       required>
+
+                <label for="contactEmail">البريد الإلكتروني</label>
+                <input id="contactEmail"
+                       name="email"
+                       type="email"
+                       placeholder="example@email.com"
+                       required>
+
+                  <label for="contactSubject">عنوان المشكلة</label>
+                  <input id="contactSubject"
+                      name="subject"
+                      type="text"
+                      maxlength="120"
+                      placeholder="مثلًا: مشكلة في تسجيل الدخول"
+                      required>
+
+                <label for="contactMessage">الرسالة</label>
+                <textarea id="contactMessage"
+                          name="message"
+                          rows="4"
+                          placeholder="اكتب رسالتك هنا..."
+                          required></textarea>
+
+                <button class="btn btn-primary" type="submit">
+                    إرسال الرسالة
+                </button>
+
+                <p id="contactFeedback"
+                   aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <a href="#home" class="logo footer-logo">
+            💛 Together | معًا
+        </a>
+
+        <p>كل خطوة صغيرة تستحق الاحتفال.</p>
+
+        <p class="footer-note">
+            منصة تعليمية داعمة، ولا تُغني عن استشارة المتخصصين عند الحاجة.
+        </p>
+
+        <p>© <span id="currentYear"></span> Together</p>
+    </footer>
+
+</body>
+</html>
